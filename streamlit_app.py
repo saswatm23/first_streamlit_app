@@ -35,9 +35,9 @@ try:
     # Show the data in tabular format
     streamlit.dataframe(fruityvice_normalized)
 
-
+except URLError as e:
 #Don't run anything past here till we troubleshoot
-streamlit.stop()
+  streamlit.error()
 
 
 
